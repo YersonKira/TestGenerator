@@ -1,0 +1,10 @@
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\TestGenerator.Data.dll
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\TestGenerator.Data.pdb
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\obj\Debug\TestGenerator.Data.csprojResolveAssemblyReference.cache
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\obj\Debug\TestGenerator.Data.dll
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\obj\Debug\TestGenerator.Data.pdb
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\TestGenerator.Data.dll.config
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.dll
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.xml
+c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.SqlServer.xml
