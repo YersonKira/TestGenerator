@@ -11,20 +11,18 @@ namespace TestGenerator.Data.Repositories
 {
     public class UserRepository: IUserRepository
     {
-        public Task<User> Find(string text)
+        public Task<IEnumerable<User>> Search(string text)
         {
-            return Task<User>.Factory.StartNew(() => {
+            return Task<IEnumerable<User>>.Factory.StartNew(() => {
                 using (var context = new TestGeneratorDb())
                 {
-                    var result = context.Users.First(
+                    var result = context.Users.ToList().Where(
                         user =>
                             user.UserCI.StartsWith(text, StringComparison.CurrentCultureIgnoreCase) ||
                             user.Names.StartsWith(text, StringComparison.CurrentCultureIgnoreCase) ||
                             user.LastName.StartsWith(text, StringComparison.CurrentCultureIgnoreCase) || 
                             user.FirstName.StartsWith(text, StringComparison.CurrentCultureIgnoreCase));
-                    if (result == null)
-                        return new User();
-                    return result;
+                    return result.AsEnumerable();
                 }
             });
         }
@@ -44,7 +42,7 @@ namespace TestGenerator.Data.Repositories
             return Task.Factory.StartNew(() => {
                 using (var context = new TestGeneratorDb())
                 {
-                    var result = context.Users.First(item => user.UserCI.Equals(item.UserCI));
+                    var result = context.Users.ToList().First(item => user.UserCI.Equals(item.UserCI));
                     if (result == null)
                     {
                         context.Users.Add(user);
@@ -59,7 +57,7 @@ namespace TestGenerator.Data.Repositories
             return Task<User>.Factory.StartNew(() => {
                 using (var context = new TestGeneratorDb())
                 {
-                    var user = context.Users.First(item => item.UserID == user_id);
+                    var user = context.Users.ToList().First(item => item.UserID == user_id);
                     if (user != null)
                     {
                         context.Users.Remove(user);

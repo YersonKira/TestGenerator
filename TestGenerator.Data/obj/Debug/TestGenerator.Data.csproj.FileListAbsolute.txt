@@ -8,3 +8,13 @@ c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerato
 c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.SqlServer.dll
 c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.xml
 c:\users\yerson\documents\visual studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\TestGenerator.Data.dll.config
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\TestGenerator.Data.dll
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\TestGenerator.Data.pdb
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.dll
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.xml
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\obj\Debug\TestGenerator.Data.csprojResolveAssemblyReference.cache
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\obj\Debug\TestGenerator.Data.dll
+C:\Users\Prefa\Documents\Visual Studio 2013\Projects\TestGenerator\TestGenerator.Data\obj\Debug\TestGenerator.Data.pdb

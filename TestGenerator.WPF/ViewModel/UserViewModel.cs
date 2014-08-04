@@ -11,6 +11,11 @@ namespace TestGenerator.WPF.ViewModel
     public class UserViewModel: ViewModelCommon
     {
         public IUserRepository UserRepository { get; set; }
+
+        #region Properties
+
+        #endregion
+
         public UserViewModel(IUserRepository repository)
         {
             this.Title = "User";

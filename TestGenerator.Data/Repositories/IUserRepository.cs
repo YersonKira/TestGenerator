@@ -9,7 +9,7 @@ namespace TestGenerator.Data.Repositories
 {
     public interface IUserRepository
     {
-        Task<User> Find(string text);
+        Task<IEnumerable<User>> Search(string text);
         Task<IEnumerable<User>> GetAll();
         Task Add(User user);
         Task<User> Remove(int user_id);
