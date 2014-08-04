@@ -32,7 +32,6 @@ namespace TestGenerator.WPF.ViewModel
         public ICommand GetAllCommand { get; set; }
         public ICommand EditCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
-
         #endregion
 
         public SearchViewModel(IUserRepository repository)
