@@ -22,7 +22,7 @@ namespace TestGenerator.WPF.ViewModel
 
         public MainViewModel()
         {
-            CurrentViewModel = searchViewModel;
+            CurrentViewModel = userViewModel;
         }
     }
 }

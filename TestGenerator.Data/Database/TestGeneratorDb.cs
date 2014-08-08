@@ -13,7 +13,7 @@ namespace TestGenerator.Data.Database
         public DbSet<User> Users { get; set; }
         public TestGeneratorDb(): base("TEST_GENERATOR_DB")
         {
-            
+            System.Data.Entity.Database.SetInitializer<TestGeneratorDb>(new DropCreateDatabaseIfModelChanges<TestGeneratorDb>());
         }
     }
 }

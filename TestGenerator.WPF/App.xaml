@@ -19,5 +19,8 @@
         <DataTemplate DataType="{x:Type viewmodel:UserViewModel}">
             <view:UserView></view:UserView>
         </DataTemplate>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

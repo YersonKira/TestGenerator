@@ -78,6 +78,7 @@
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\SearchViewModel.cs" />
     <Compile Include="ViewModel\UserViewModel.cs" />
+    <Compile Include="ViewModel\utils\Utils.cs" />
     <Compile Include="ViewModel\ViewModelCommon.cs" />
     <Compile Include="View\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>

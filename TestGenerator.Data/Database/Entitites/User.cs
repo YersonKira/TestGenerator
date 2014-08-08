@@ -40,5 +40,7 @@ namespace TestGenerator.Data.Database.Entitites
         [Required]
         [DisplayName("CLASSROOM")]
         public char Classroom { get; set; }
+
+        public byte[] Image { get; set; }
     }
 }

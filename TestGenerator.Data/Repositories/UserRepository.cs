@@ -42,7 +42,7 @@ namespace TestGenerator.Data.Repositories
             return Task.Factory.StartNew(() => {
                 using (var context = new TestGeneratorDb())
                 {
-                    var result = context.Users.ToList().First(item => user.UserCI.Equals(item.UserCI));
+                    var result = context.Users.ToList().FirstOrDefault(item => user.UserCI.Equals(item.UserCI));
                     if (result == null)
                     {
                         context.Users.Add(user);
@@ -57,7 +57,7 @@ namespace TestGenerator.Data.Repositories
             return Task<User>.Factory.StartNew(() => {
                 using (var context = new TestGeneratorDb())
                 {
-                    var user = context.Users.ToList().First(item => item.UserID == user_id);
+                    var user = context.Users.ToList().FirstOrDefault(item => item.UserID == user_id);
                     if (user != null)
                     {
                         context.Users.Remove(user);

@@ -5,37 +5,57 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="600">
-    <Grid Margin="10" DataContext="{Binding User}">
+    <Grid Margin="10" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="auto"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
-        <TextBlock Grid.Row="1">Registro:</TextBlock>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding RegistrationNumber}"></TextBox>
-        <TextBlock Grid.Row="2">CI:</TextBlock>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding UserCI}"></TextBox>
-        <TextBlock Grid.Row="3">Apellido Paterno:</TextBlock>
-        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding FirstName}"></TextBox>
-        <TextBlock Grid.Row="4">Apellido Materno:</TextBlock>
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding LastName}"></TextBox>
-        <TextBlock Grid.Row="5">Nombres:</TextBlock>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Names}"></TextBox>
-        <TextBlock Grid.Row="6">Aula:</TextBlock>
-        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Classroom}"></TextBox>
-        
-        <Button Grid.Row="7" Command="{Binding SaveCommand}">Guardar</Button>
-        <Button Grid.Row="8" Command="{Binding CancelCommand}">Cancelar</Button>
+        <Grid DataContext="{Binding User}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="1">Registro:</TextBlock>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding RegistrationNumber,Mode=TwoWay}"></TextBox>
+            <TextBlock Grid.Row="2">CI:</TextBlock>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding UserCI,Mode=TwoWay}"></TextBox>
+            <TextBlock Grid.Row="3">Apellido Paterno:</TextBlock>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding FirstName,Mode=TwoWay}"></TextBox>
+            <TextBlock Grid.Row="4">Apellido Materno:</TextBlock>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding LastName,Mode=TwoWay}"></TextBox>
+            <TextBlock Grid.Row="5">Nombres:</TextBlock>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Names,Mode=TwoWay}"></TextBox>
+            <TextBlock Grid.Row="6">Aula:</TextBlock>
+            <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Classroom,Mode=TwoWay}"></TextBox>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Source="{Binding ImagePath}" Width="200" Height="200"></Image>
+            <Button Grid.Row="1" Command="{Binding SelectImageCommand}">SelectImage</Button>
+        </Grid>
+        <StackPanel HorizontalAlignment="Right" Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+            <Button Width="100" IsEnabled="{Binding IsSaveButtonEnabled}" Command="{Binding SaveCommand}">Guardar</Button>
+            <Button Width="100" IsEnabled="{Binding IsSaveButtonEnabled}" Command="{Binding CancelCommand}">Cancelar</Button>
+        </StackPanel>
+        <ProgressBar Grid.Row="2" IsIndeterminate="True" Visibility="{Binding IsProgressBarEnabled}" Grid.ColumnSpan="2" ></ProgressBar>
     </Grid>
 </UserControl>
